@@ -1,0 +1,39 @@
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid double rgb(24, 24, 24);
+  border-bottom-style: double;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-right: 75%;
+}
+.header-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-title {
+  font-family: "Engravers' Old English BT";
+  font-size: 50px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(217, 212, 212);
+}
+.date {
+  margin-top: 5px;
+}
+.sub-header {
+  word-spacing: 5px;
+}
+
