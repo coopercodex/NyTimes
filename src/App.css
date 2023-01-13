@@ -8,13 +8,14 @@
 }
 
 @media (min-width: 1024px) {
-  .App  {
+  .App {
     margin: 0 auto;
     padding: 0 4%;
   }
 }
 
 input {
+  font-size: large;
   height: 20px;
   text-align: center;
   width: 28px;
@@ -34,9 +35,23 @@ input:focus {
 .search-icon {
   position: absolute;
   background-color: transparent;
-  padding-left: 2px;
+  padding-left: 3px;
   padding-top: 4.5px;
   height: 15px !important;
 }
 
+.search-results img {
+  max-height: 450px;
+  max-width: 570px;
+  margin-top: 2px;
+  padding: 5px;
+}
 
+.search-results h1 {
+  font-size: large;
+}
+
+.search-results h4 {
+  font-size: 15px;
+  margin-top: -8px;
+}

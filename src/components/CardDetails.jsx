@@ -8,12 +8,13 @@ export const CardDetails = () => {
   const { paper } = state || {};
   // const paper = mostPopular;
   console.log("state", paper)
+  // const s =(typeof paper?.multimedia[0].caption)
 
   return (paper) ? (
     <div className='card-details'>
       <h1>{paper?.title}</h1>
       <p>{paper?.abstract}</p>
-      {paper?.multimedia[0].caption ? <img src={paper?.multimedia[0].url} /> : <img src={`https://static01.nyt.com/${paper.multimedia[0].url}`} />}
+      {paper?.multimedia[0].copyright ? <img src={paper?.multimedia[0].url} /> : <img src={`https://static01.nyt.com/${paper.multimedia[0].url} `} />}
       {paper?.multimedia[0] ? <h4>{paper?.multimedia[0].caption}</h4> : <h1> Not Found</h1>}
     </div>
   ) : <div className='error'>

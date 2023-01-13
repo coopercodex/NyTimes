@@ -1,12 +1,12 @@
-const id = '';
+
 const value = '';
 const endpoints = {
-  getWorld: `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`,
-  getPolitics: `https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`,
-  getArt: `https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`,
-  getTech: `https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`, 
-  getClicked: `https://api.nytimes.com/svc/topstories/v2/${value}.json?api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`,
-  getSome: `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${value}&api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`,
+  getWorld: `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`,
+  getPolitics: `https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=${process.env.REACT_APP_API_KEY}`,
+  getArt: `https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=${process.env.REACT_APP_API_KEY}`,
+  getTech: `https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=${process.env.REACT_APP_API_KEY}`, 
+  getClicked: `https://api.nytimes.com/svc/topstories/v2/${value}.json?api-key=${process.env.REACT_APP_API_KEY}`,
+  getSome: `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${value}&api-key=${process.env.REACT_APP_API_KEY}`,
 }
 
 export default endpoints;
