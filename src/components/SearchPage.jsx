@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Card } from './Card'
+import React, { useState } from 'react'
 import { SearchBar } from './SearchBar'
-import endpoints from '../endpoints'
 import { Link } from 'react-router-dom'
+
 
 export const SearchPage = () => {
   const [term, setTerm] = useState('')
   const [results, setResults] = useState([])
-  // const [errorMessage, setErrorMessage] = useState('')
- 
-
  
   const onTermChange = (event) => {
     event.preventDefault();
@@ -17,7 +13,7 @@ export const SearchPage = () => {
   }
 
   const searchApi = () => {
-    fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=WkxVvDsCfCHKL7AtdFbdwDMGFAW0y4pe`)
+    fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${process.env.REACT_APP_API_KEY}`)
     .then(res => res.json())
     .then(data => {
       setResults(data.response.docs)
@@ -29,11 +25,6 @@ export const SearchPage = () => {
     searchApi()
   }
 
-  // useEffect(() => {
-  //   searchApi()
-  // },[])
-
-  console.log(results)
   return (
         <>
       <SearchBar term={term} onTermChange={onTermChange} onTermSubmit={handleSubmit} />
