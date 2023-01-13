@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Card.css"
-import { Header } from './Header'
-import { MostPopular } from './MostPopular'
 
 export const Card = ({ title, getUrl, rid }) => {
   const [story, setStory] = useState([])
@@ -19,7 +17,7 @@ export const Card = ({ title, getUrl, rid }) => {
         setStory(data.results)
       })
   }
-// console.log(story[0]?.section)
+
   return (
     <>
       <h1>{title}</h1>

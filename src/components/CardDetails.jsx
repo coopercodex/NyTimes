@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom';
 import "./CardDetails.css"
 import { Link } from 'react-router-dom';
@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom';
 export const CardDetails = () => {
   const { state } = useLocation();
   const { paper } = state || {};
-  // const paper = mostPopular;
-  console.log("state", paper)
-  // const s =(typeof paper?.multimedia[0].caption)
 
   return (paper) ? (
     <div className='card-details'>
