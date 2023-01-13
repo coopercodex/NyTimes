@@ -1,5 +1,9 @@
 # NY Times
 
+![Screen Shot 2023-01-13 at 12 49 10 PM](https://user-images.githubusercontent.com/105816411/212406447-448dda73-f765-453f-bc93-4ad8fb0acaf8.png)
+
+
+
 ## Table Of Contents
 
   - [Introduction](#introduction)
