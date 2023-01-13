@@ -6,6 +6,7 @@ export const MostPopular = () => {
   const [mostPopular, setMostPopular] = useState([])
   const limitedList = mostPopular.slice(8, 23)
   const newList = limitedList.splice(6, 3, mostPopular[32], mostPopular[26])
+ 
 
   useEffect(() => {
     getData()
@@ -18,14 +19,14 @@ export const MostPopular = () => {
         setMostPopular(data?.results)
       })
   }
-  console.log(limitedList)
-  console.log(mostPopular)
-  // const r = (limitedList.map(item => item.section))
+  // console.log(limitedList)
+  // console.log(mostPopular)
+  //   const r = (limitedList.map(item => item))
   //   const v = ([...new Set(r)])
+  //   console.log(v)
 
   return (
     <div className='sub-header'>{limitedList.map((paper, index) => (
-
       <Link to={`/CardDetails/${paper?.title}`}
         state={{ paper }}>
         <li >{paper?.section}</li>
