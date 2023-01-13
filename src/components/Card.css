@@ -1,0 +1,53 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 85vh;
+  margin: 10px;
+}
+
+.card-left img {
+  max-height: 450px;
+  max-width: 550px;
+  /* margin-top: 2px; */
+  padding: 5px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.card-container img:hover {
+  opacity: 0.9;
+}
+
+.card-left {
+  border-top: 1px solid black;
+  display: flex;
+}
+
+
+.card-right {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 50%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(182, 180, 180);
+}
+
+.card-right img {
+  object-fit: contain;
+  height: 200px;
+  width: 320px;
+}
+
+.card-right h4 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  align-self: center;
+  font-weight: 400;
+  margin-bottom: 5px;
+}

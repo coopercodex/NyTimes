@@ -14,4 +14,29 @@
   }
 }
 
+input {
+  height: 20px;
+  text-align: center;
+  width: 28px;
+  background-color: transparent;
+  transition: width 1s ease-in-out;
+  border-radius: 10px;
+}
+
+input:focus {
+  width: 100%;
+}
+
+.search-bar {
+  align-self: center;
+}
+
+.search-icon {
+  position: absolute;
+  background-color: transparent;
+  padding-left: 2px;
+  padding-top: 4.5px;
+  height: 15px !important;
+}
+
 
