@@ -19,7 +19,7 @@ export const Card = ({ title, getUrl, rid }) => {
         setStory(data.results)
       })
   }
-
+// console.log(story[0]?.section)
   return (
     <>
       <h1>{title}</h1>
