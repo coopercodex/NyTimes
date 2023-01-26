@@ -24,7 +24,7 @@
   - HTML
   - CSS
   - Router V6
-  - XML
+
   
 
 
