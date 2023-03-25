@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export const MostPopular = () => {
-  console.log (` 0000000                         000        0000000
+  console.log(` 0000000                         000        0000000
   111111111      11111111100          000      111111111
   00000        111111111111111111      00000      000000
   000        1111111111111111111111111100000         000
@@ -27,7 +27,7 @@ export const MostPopular = () => {
 
 
   const [filterList, setFilterList] = useState([])
- 
+
   useEffect(() => {
     getData()
   }, [])
@@ -43,11 +43,10 @@ export const MostPopular = () => {
             copyOfFilterList.push(article.section)
             a.push(article)
           }
-
         })
         setFilterList(a)
       })
-    }
+  }
 
   return (
     <div className='sub-header'>{filterList?.map((paper) => (
